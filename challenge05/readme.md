@@ -1,6 +1,4 @@
-Challenge 5: Battle Royale de frameworks y bibliotecas
-
-Problema
+# Reto 5: Battle Royale de frameworks y bibliotecas
 
 Hay tanto framework y biblioteca que ya no sabemos qué usar. Así que un comité ha decidido hacer una especie de Los Juegos del Hambre para decidir qué tecnología se queda.
 
@@ -8,7 +6,7 @@ Ha puesto todas las tecnologías en círculo de forma aleatoria. La tecnología 
 
 El siguiente turno es para la tecnología que esté viva que queda a la derecha de la que se acaba de morir. Y así sucesivamente hasta que sólo quede una. Mira este ejemplo de un grupo de 10 tecnologías, paso a paso:
 
-
+```
          5
       6     4
    7           3
@@ -48,15 +46,43 @@ El siguiente turno es para la tecnología que esté viva que queda a la derecha 
    X           X
       X     X
          X
+```
+
 La tecnología en el índice 4 es la que ha sobrevivido.
 
 Ahora, para probar que somos capaces de crear un algoritmo que funcione, tenemos la lista de mecenas de la comunidad de midudev: https://codember.dev/mecenas.json
 
 Tienes que crear un algoritmo que nos diga qué usuario sobreviviría usando el mismo sistema.
 
-Cómo enviar la solución
-Envía la solución con el comando submit, y el índice de la persona que sobrevive y su nombre de usuario, separado de un guión.
+Cómo enviar la solución:
+- Envía la solución con el comando submit, y el índice de la persona que sobrevive y su nombre de usuario, separado de un guión.
 
 Por ejemplo, si el usuario que sobrevive es facundopacua y está en el índice 8 sería:
 
+```bash
 $ submit facundocapua-8
+```
+
+## Solución
+
+```js
+const fs = require('fs')
+const data = JSON.parse(fs.readFileSync('./mecenas.json'))
+
+const battleRoyale = (frameworks) => {
+    let survivors = []
+    for(let i = 0; i < frameworks.length; i++){
+        //me guardo la posición original de cada elemento en la primera iteración de la función recursiva
+        frameworks.length === data.length 
+            ? i % 2 === 0 && survivors.push(`${frameworks[i]}-${i}`)
+            : i % 2 === 0 && survivors.push(frameworks[i])
+    }
+    
+    //en caso de que el frameworks resultante sea impar borramos el primero ya que lo matan también
+    frameworks.length % 2 !== 0 && survivors.shift()
+    return frameworks.length === 1 ? frameworks[0] : battleRoyale(survivors)
+    
+}
+
+console.log(`submit ${battleRoyale(data)}`)
+```
