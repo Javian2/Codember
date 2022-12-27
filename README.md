@@ -9,8 +9,9 @@
     Todas las soluciones se han implementado usando Javascript como lenguaje
 </p>
 
+<h1>Soluciones</h1>
 
-| Challenge                                                    | Solucion                              |
+| Challenge                                                    | Solución                              |
 | ------------------------------------------------------------ | ------------------------------------- |
 | Challenge 1 - ¡Arregla twitter!                              | [Solucion](challenge01/twitter.js)    |
 | Challenge 2 - ¡Atrapa a esos ciber criminales!               | [Solucion](challenge02/encrypted.js)  |
