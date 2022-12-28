@@ -1,6 +1,6 @@
-![image](https://user-images.githubusercontent.com/52936547/205374409-0e3e1bdf-3240-479c-9290-e6a3c5f403a2.png)
-
 # Codember
+
+![image](https://user-images.githubusercontent.com/52936547/205374409-0e3e1bdf-3240-479c-9290-e6a3c5f403a2.png)
 
 <a href="https://codember.dev/">Codember</a> is a game with programming and research challenges made by Midudev. In this repository you can find the solutions to the challenges as well as the statements and the files used.
 
