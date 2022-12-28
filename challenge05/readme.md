@@ -1,10 +1,12 @@
-# Reto 5: Battle Royale de frameworks y bibliotecas
+# Challenge 5: Battle Royale of frameworks and libraries
 
-Hay tanto framework y biblioteca que ya no sabemos qué usar. Así que un comité ha decidido hacer una especie de Los Juegos del Hambre para decidir qué tecnología se queda.
+## Instructions
 
-Ha puesto todas las tecnologías en círculo de forma aleatoria. La tecnología en el índice 0 empieza matando a la que tiene justo a la derecha (índice + 1).
+There are so many frameworks and libraries that we don't know what to use anymore. So a committee has decided to do a kind of Hunger Games to decide which technology stays.
 
-El siguiente turno es para la tecnología que esté viva que queda a la derecha de la que se acaba de morir. Y así sucesivamente hasta que sólo quede una. Mira este ejemplo de un grupo de 10 tecnologías, paso a paso:
+It has put all the technologies in a random circle. The technology at index 0 starts by killing the one just to the right (index + 1).
+
+The next turn goes to the living technology to the right of the one that just died. And so on until there is only one left. See this example of a group of 10 technologies, step by step:
 
 ```
          5
@@ -14,11 +16,11 @@ El siguiente turno es para la tecnología que esté viva que queda a la derecha 
       9     1
          0
 
-0 mata a 1
-2 mata a 3
-4 mata a 5
-6 mata a 7
-8 mata a 9
+0 kills 1
+2 kills 3
+4 kills 5
+6 kills 7
+8 kills 9
 
          X
      6      4
@@ -27,9 +29,9 @@ El siguiente turno es para la tecnología que esté viva que queda a la derecha 
       X     X
          0
 
-0 mata a 2
-4 mata a 6
-8 mata a 0
+0 kills 2
+4 kills 6
+8 kills 0
 
          X
      X      4
@@ -38,7 +40,7 @@ El siguiente turno es para la tecnología que esté viva que queda a la derecha 
       X     X
          X
 
-4 mata a 8
+4 kills 8
 
          X
      X      4
@@ -48,22 +50,22 @@ El siguiente turno es para la tecnología que esté viva que queda a la derecha 
          X
 ```
 
-La tecnología en el índice 4 es la que ha sobrevivido.
+The technology in index 4 is the one that has survived.
 
-Ahora, para probar que somos capaces de crear un algoritmo que funcione, tenemos la lista de mecenas de la comunidad de midudev: https://codember.dev/mecenas.json
+Now, to prove that we are able to create an algorithm that works, we have the midudev community patron list: https://codember.dev/mecenas.json
 
-Tienes que crear un algoritmo que nos diga qué usuario sobreviviría usando el mismo sistema.
+You have to create an algorithm that tells us which user would survive using the same system.
 
-Cómo enviar la solución:
-- Envía la solución con el comando submit, y el índice de la persona que sobrevive y su nombre de usuario, separado de un guión.
+How to submit the solution:
+- Send the solution with the submit command, and the index of the person who survives and their username, separated by a hyphen.
 
-Por ejemplo, si el usuario que sobrevive es facundopacua y está en el índice 8 sería:
+For example, if the surviving user is facundopacua and is at index 8 it would be:
 
 ```bash
 $ submit facundocapua-8
 ```
 
-## Solución
+## Solution
 
 ```js
 const fs = require('fs')
