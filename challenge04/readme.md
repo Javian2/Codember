@@ -1,34 +1,36 @@
-# Reto 4: Encuentra la contraseña de tu amigo
+# Challenge 4: Find your friend's password
 
-Un amigo compró 5 BitCoins en 2008. El problema es que lo tenía en un monedero digital... ¡y no se acuerda de la contraseña!
+## Instructions
 
-Nos ha pedido ayuda. Y nos ha dado algunas pistas:
+A friend of mine bought 5 BitCoins in 2008. The problem is that he had it in a digital wallet... and he can't remember the password!
 
-- Es una contraseña de 5 dígitos.
-- La contraseña tenía el número 5 repetido dos veces.
-- El número a la derecha siempre es mayor o igual que el que tiene a la izquierda.
+He asked us for help. And he has given us some clues:
 
-Nos ha puesto algunas ejemplos:
+- It is a 5-digit password.
+- The password had the number 5 repeated twice.
+- The number on the right is always greater than or equal to the number on the left.
+
+He gave us some examples:
 ```
-55678 es correcto lo cumple todo
-12555 es correcto, lo cumple todo
-55555 es correcto, lo cumple todo
-12345 es incorrecto, no tiene el 5 repetido.
-57775 es incorrecto, los números no van de forma creciente
+55678 is correct, it does everything
+12555 is correct, it does everything
+55555 is correct, it does everything
+12345 is incorrect, it does not have a repeated 5.
+57775 is incorrect, the numbers do not go in an increasing order.
 ```
 
-Dice que el password está entre los números 11098 y 98123. ¿Le podemos decir cuantos números cumplen esas reglas dentro de ese rango?
+It says the password is between the numbers 11098 and 98123. Can we tell you how many numbers within that range meet those rules?
 
-Cómo enviar la solución:
-Envía la solución con el comando submit, y el número de passwords que cumplen el criterio junto con el password que está en el índice 55 de la lista de passwords válidos, separado por un guión.
+How to submit the solution:
+Send the solution with the submit command, and the number of passwords that meet the criteria along with the password that is at index 55 in the list of valid passwords, separated by a hyphen.
 
-Por ejemplo, para 87 resultados y el password 35522 en la posición 55 sería:
+For example, for 87 results and the password 35522 at position 55 it would be:
 
 ```bash
 $ submit 87-35522
 ```
 
-## Solución
+## Solution
 
 ```js
 const MIN_NUMBER = 11098;
