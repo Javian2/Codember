@@ -2,20 +2,17 @@
 
 # Codember
 
-<p>
-    <a href="https://codember.dev/">Codember</a> es un juego con retos de programación e investigación realizado por Midudev. En este repositorio se encuentran las soluciones a los retos planteados así como los enunciados del mismo y los archivos utilizados.
-</p>
-<p>
-    Todas las soluciones se han implementado usando Javascript como lenguaje
-</p>
+<a href="https://codember.dev/">Codember</a> is a game with programming and research challenges made by Midudev. In this repository you can find the solutions to the challenges as well as the statements and the files used.
 
-## Retos
+All the solutions have been implemented using Javascript as a programming language.
 
-- [Reto 1](https://github.com/Javian2/Codember/blob/main/challenge01)
-- [Reto 2](https://github.com/Javian2/Codember/blob/main/challenge02)
-- [Reto 3](https://github.com/Javian2/Codember/blob/main/challenge03)
-- [Reto 4](https://github.com/Javian2/Codember/blob/main/challenge04)
-- [Reto 5](https://github.com/Javian2/Codember/blob/main/challenge05)
+## Challenges
+
+- [Challenge 1](https://github.com/Javian2/Codember/blob/main/challenge01)
+- [Challenge 2](https://github.com/Javian2/Codember/blob/main/challenge02)
+- [Challenge 3](https://github.com/Javian2/Codember/blob/main/challenge03)
+- [Challenge 4](https://github.com/Javian2/Codember/blob/main/challenge04)
+- [Challenge 5](https://github.com/Javian2/Codember/blob/main/challenge05)
 
 
 
