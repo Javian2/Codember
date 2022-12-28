@@ -1,10 +1,12 @@
-# Reto 3: La zebra de colores
+# Challenge 3: The colourful zebra
 
-TMChein ya se está preparando para las fiestas y quiere empezar a decorar la casa con las luces de navidad.
+## Instructions
 
-Quiere comprar una pero sus favoritas son las que tienen dos colores que se van alternando. Como una zebra de dos colores.
+TMChein is already getting ready for the holidays and wants to start decorating the house with Christmas lights.
 
-Ha hecho que las luces sean Arrays y cada posición un color. Y quiere saber qué luces tienen las zebras más largas y cuál es el último color de esa sucesión de colores. Por ejemplo:
+She wants to buy one but her favourite ones are the ones with two alternating colours. Like a two-coloured zebra.
+
+She has made the lights into arrays and each position a colour. And he wants to know which lights have the longest zebras and which is the last colour in that succession of colours. For example:
 
 ```
 ['red', 'blue', 'red', 'blue', 'green'] -> 4, blue
@@ -14,23 +16,23 @@ Ha hecho que las luces sean Arrays y cada posición un color. Y quiere saber qu�
 ['red, 'red, 'blue', 'red', 'red, 'red', 'green'] -> 3, red
 ```
 
-Fíjate que sólo quiere saber la longitud de cuando dos colores se van alternando. Una vez que se rompe la alternancia de los dos colores, deja de contar.
+Notice that it only wants to know the length when two colours alternate. Once the alternation of the two colours is broken, it stops counting.
 
-Ahora que ya sabes esto, https://codember.dev/colors.txt
+Now that you know this, https://codember.dev/colors.txt
 
-Recuerda:
-- Una zebra de colores es cuando dos colores se alternan una y otra vez.
-- Si se repite un color en la posición siguiente o es un tercer color, entonces se deja de contar.
-- Lo que queremos calcular es la tira de colores más larga en forma de zebra y el último color de esa tira de colores.
+Remember:
+- A colour zebra is when two colours alternate back and forth.
+- If a colour is repeated in the next position or is a third colour, then it stops counting.
+- What we want to calculate is the longest zebra-shaped strip of colours and the last colour in that strip of colours.
 
-Cómo enviar la solución:
-- Usa el comando "submit" para enviar tu solución. Por ejemplo:
+How to submit the solution:
+- Use the "submit" command to submit your solution. For example:
 
 ```bash
 $ submit 62@red
 ```
 
-## Solución
+## Solution
 
 ```js
 const fs = require('fs')
