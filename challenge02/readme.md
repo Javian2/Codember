@@ -1,10 +1,12 @@
-# Reto 2: ¡Atrapa a esos ciber criminales!
+# Challenge 2: Catch those cyber criminals!
 
-Un grupo de ciber criminales están usando mensajes encriptados para comunicarse. El FBI nos ha pedido ayuda para descifrarlos.
+## Instructions 
 
-Los mensajes son cadenas de texto que incluyen números enteros muy largos y espacios en blanco. Aunque los números no parecen tener sentido... una chica llamada Alice ha descubierto que podrían usar el código ASCII de las letras en minúscula.
+A group of cyber criminals are using encrypted messages to communicate. The FBI has asked for our help in decrypting them.
 
-Con su método ha conseguido descifrar estos mensajes:
+The messages are strings of text that include very long whole numbers and blank spaces. Although the numbers don't seem to make sense... a girl called Alice has discovered that they could use the ASCII code for the lowercase letters.
+
+With her method she has managed to decipher these messages:
 
 ```
 "109105100117" -> midu
@@ -13,23 +15,23 @@ Con su método ha conseguido descifrar estos mensajes:
 "11210897121 116101116114105115" -> play tetris
 ```
 
-Pero han interceptado un mensaje más largo que no han podido y nos han dicho que es muy importante que lo descifremos:
+But they have intercepted a longer message that they have not been able to intercept and they have told us that it is very important that we decrypt it:
 
 `11610497110107115 102111114 11210897121105110103 9911110010110998101114 11210810197115101 11510497114101`
 
-Pistas:
-- Recuerda que los mensajes son cadenas de texto conformadas por números y espacios en blanco.
-- Parece que los números tienen algo que ver con el código ASCII.
-- Los espacios en blanco parece que son simplemente espacios...
+Hints:
+- Remember that messages are text strings made up of numbers and blanks.
+- The numbers seem to have something to do with ASCII code.
+- The blanks seem to be simply spaces...
 
-Cómo enviar la solución
-- Usa el comando "submit" para enviar tu solución con la frase descifrada, en minúsculas y respetando los espacios en blanco. Por ejemplo:
+How to submit the solution
+- Use the "submit" command to send your solution with the decoded sentence, in lower case and respecting the blanks. For example:
 
 ```bash
 $ submit this is fine
 ```
 
-## Solución
+## Solution
 
 ```js
 const fs = require('fs')
